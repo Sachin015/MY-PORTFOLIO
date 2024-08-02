@@ -1,0 +1,546 @@
+
+:root{
+    --body:#ecf0f1;
+    --component:#ffffff;
+    --btn:#ff4757;
+    --para:16px;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+::selection{
+    color: white;
+    background: #000;
+}
+body{
+    background-color: var(--body);
+    width: 100%;
+    height: 100vh;
+}
+.navigation{
+    padding: 0 5%;
+    position: sticky; 
+    top: 0;
+    z-index: 111;
+    width: 100%;
+    height: 9vh;
+    background: #ffffff;
+    align-items: center;
+}
+.navigation ul{
+    display: flex;
+    list-style: none;
+    float: right;
+    margin-right: 20px;
+    position: relative;
+    top: 1rem;
+}
+.navigation ul li{
+    padding: 10px 15px;
+}
+
+.navigation ul li a::before{
+    content: "";
+    background:linear-gradient(45deg,#ff0000,#ff3333);
+    position: absolute;
+    height: 2px;
+    width: 0;
+    bottom: 0;
+    left: 0;
+    top: 25px;
+    transition: all linear 0.3s;
+    opacity: 0;
+}
+.navigation ul li a:hover::before{
+    width: 100%;
+    display: block;
+    border-radius: 5px;
+    opacity: 100%;
+}
+.navigation ul li a:link{
+    color: rgb(255, 0, 0);
+}
+.navigation ul li a{
+    width: max-content;
+    position: relative;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    text-decoration: none;
+    color: black;
+    font-size:16px;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    transition: all linear 0.2s;
+    font-size: 1.25rem;
+}
+.navigation ul li a:hover{
+    color: #ff0000;
+    
+}
+
+.main{
+    background-color: var(--component);
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 15px 10%;
+    width: 100%;
+    min-height: 80vh;
+    align-items: center;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.177);
+}
+.section-1{
+    width: 50%;
+    color: #21243D;
+    display: flex;
+    flex-direction: column;
+}
+.section-1 h2{
+    font-family: "Roboto", sans-serif;
+        font-weight: 600;
+        font-style: normal;
+        flex: 1 1 1 100px;
+    font-size: 44px;
+    line-height: 60px;
+    margin-bottom: 40px;
+}
+.section-1 button{
+    margin-top: 20px;
+font-size: 20px;
+font-weight: 500;
+line-height: 29.38px;
+    width: 208px;
+    height: 47px;
+    outline: none;
+    border: none;
+    background: linear-gradient(45deg,#ff3333d2,#971818cb);
+    position: relative;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.section-1 button::after{
+    content: "";
+    width: 0%;
+    height: 100%;
+    position: absolute;
+    background: linear-gradient(45deg,#ff3333,#971818);
+    top: 0;
+    left: 0;
+    border-radius: 5px;
+}
+.section-1 button:hover::after{
+    width: 100%;
+    transition:  linear 0.3s;
+}
+.section-1 button a{
+    color: #f4f4f4;
+    text-decoration: none;
+    font-family: "Roboto", sans-serif;
+        font-weight: 370;
+        font-style: normal;
+        position: relative;
+        z-index: 111;
+        font-weight: 450;
+        letter-spacing: 1px;
+}
+
+.section-1 p{
+    flex: 1 1 1 100px;
+    font-size: 16px;
+    font-weight: 450;
+    line-height: 25.5px;
+    color:#21243D;
+    margin-bottom: 20px;
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    letter-spacing: 1px;
+}
+.section-1 p::first-letter{
+    font-size: 2rem;
+    padding: 0 5px;
+   
+}
+.section-2 img{
+    outline: 10px groove rgb(255, 0, 0);
+    border-radius: 50%;
+}
+
+
+.Posters{
+    padding: 3% 10%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+   background: var(--body);
+   margin-bottom: 20px;
+
+}
+.title{
+    width: 100%;
+   height: 100px;
+}
+.Posters .title a{
+    color: #ff0000;
+    text-decoration: none;
+    position: absolute;
+    right: 0;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    letter-spacing: 1px;
+    display: flex; 
+    margin:0 10%;
+    transition: all linear 0.1s;
+}
+.Posters a:hover{
+    transform: scale(1.05);
+}
+.Posters a::before{
+    content: "";
+    width: 20%;
+    height: 2px;
+    background-color: #ff0092;
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    border-radius: 5px;
+    transition: all ease 0.3s;
+    opacity: 0;
+}
+.Posters a:hover::before{
+    width: 100%;
+    opacity: 100%;
+}
+.Posters span{
+    position: absolute;
+    margin:0 10%;
+    left: 0;
+    font-weight: 370;
+    font-family: "Roboto", sans-serif;
+
+}
+.posts {
+    width: 100%;
+    display: flex;
+    justify-content:space-between;
+    flex-wrap: wrap;
+    height: 100%;
+}
+.posts h3{
+    text-align: center;
+    padding: 20px 0 0 0;
+    height: 85px;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    font-family: "Roboto", sans-serif;
+}
+.posts .pad{
+    text-align: center;
+    margin-bottom: 30px;
+    font-family: 'Roboto', 'san-serif';
+}
+.posts #col-1{
+    font-weight: 350;
+    font-style: normal;
+    width:50%;
+    padding: 10px 50px;
+border-radius: 4px 0px 0px 0px;
+box-shadow:12px 12px 15px -15px  rgba(0, 0, 0, 0.5);
+background-color: var(--component);
+border-radius: 20px;
+min-height:350px ;
+flex: 1 1 100px;
+}
+.posts #col-2{
+    font-weight: 350;
+    font-style: normal;
+    padding: 10px 50px;
+    position: relative;
+    left: 30px;
+    width:50%;
+border-radius: 4px 0px 0px 0px;
+box-shadow:12px 12px 15px -15px  rgba(0, 0, 0, 0.5);
+background-color: var(--component);
+border-radius: 20px;
+min-height:350px ;
+flex: 1 1 100px;
+}
+
+
+
+.work{
+    background-color: var(--component);
+    min-height: 100vh;
+    width: 100%;
+    padding: 10px 10%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.content p{
+    flex:1 1 100px;
+}
+.work strong{
+    font-family: "Noto Sans", sans-serif;
+    width: 152px;
+font-size: 16px;
+font-weight: 400;
+line-height: 23.5px;
+padding: 10px 0;
+}
+.work .image img{
+    border-radius: 6px 0px 0px 0px;
+}
+
+.work .workOne{
+    display: flex;
+    border-bottom: 1px solid #E0E0E0;
+    padding: 10px 0;
+}
+.work .workTwo{
+    display: flex;
+    border-bottom: 1px solid #E0E0E0;
+    padding: 10px 0;
+}
+.work .workThree{
+    display: flex;
+    border-bottom: 1px solid #E0E0E0;
+    padding: 10px 0;
+}
+.content{
+    padding: 0 10px;
+}
+.work h4{
+    width: 305px;
+    height: 10px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+}
+.Date{
+    width: 42px;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 60px;
+    background: #142850;
+    border-radius: 15px;
+    color: white;
+    padding: 5px;
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+}
+.name{
+font-size: 20px;
+font-weight: 400;
+color: #8695A4;
+}
+.content p{
+font-size: 16px;
+font-weight: 370;
+line-height: 23.5px;
+flex: 1 1 1 100px;
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 23.5px;
+    width: 100%;
+    height: 182px;
+    background: var(--component);
+}
+.social-links{
+    padding: 1px 10px;
+}
+.social-links a{
+    font-size: 25px;
+    padding: 18px;
+    margin-bottom: 10px;
+    color: #21243de3;
+    display: inline-block;
+}
+.social-links a:hover{
+    color: black; 
+    transform: scale(1.25);
+    transition: all ease 0.5s;
+}
+footer p{
+    font-size: 14px;
+    font-weight: 300;
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+    flex: 1 1 1;
+}
+
+
+
+
+
+
+
+
+/* media-query */
+
+
+/* --------------for Mobile ---------------- */
+@media  (width<=576px) {
+   .navigation{
+    display: none;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    background-color:var(--component);
+       width: 250px;
+       height: 100vh;
+    }
+    .navigation ul{
+        flex-direction: column;
+        height: 200px;
+   }
+
+    #bar{
+        position: sticky;
+        top: 0;
+        left: 0;
+    list-style: none;
+    padding: 10px 20px;
+    font-size: 1.25rem;
+    background-color: white;
+    cursor: pointer;
+   }
+   
+  
+   .main .section-2{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+   }
+   .main img{
+    order: 1;
+    height: 250px;
+    width: 250px;
+   }
+   .main .section-1{
+    order:2;
+    margin-top: 20px;
+    justify-content: center;
+   }
+   .main .section-1 h2{
+    font-size: 2.5rem;
+    width :100vw;
+    align-items: center;
+   }
+   .main .section-1 p{
+    width :80vw;
+    align-items: center;
+   }
+
+   .section-1 button {
+    width: 160px;
+    padding: 0 4px;
+   }
+   .section-1 button a{
+    font-size: 0.95rem;
+   }
+
+   .workOne{
+    display: flex;
+    flex-direction: column;
+   }
+   .workTwo{
+    display: flex;
+    flex-direction: column;
+   }
+   .workThree{
+    display: flex;
+    flex-direction: column;
+   }
+
+   #col-2{
+    display: none;
+   }
+}
+
+
+
+/* ----------------for tablet ----------------- */
+@media (min-width:576px)and (max-width:767px){
+    
+    #bar{
+        display: none;
+    }
+    #col-2{
+        display: none;
+       }
+
+       .workOne{
+        display: flex;
+        flex-direction: column;
+       }
+       .workTwo{
+        display: flex;
+        flex-direction: column;
+       }
+       .workThree{
+        display: flex;
+        flex-direction: column;
+       }
+       .navigation{
+        height: 66px ;
+       }
+
+       .main{
+        width: 100%;
+       }
+       .section-1{
+        width: 50%;
+       }
+       .section-2{
+        width: 50%;
+       }
+       .section-2 img{
+        width: 275px;
+        height: 275px;
+       }
+    
+ 
+}
+
+/* -------------------for large screen ---------- */
+@media (min-width:767px)and (max-width:992px){
+    #bar{
+        display: none;
+    }
+    .navigation{
+        height: 66px ;
+       }
+}
+
+
+/* ---------------------for XXL screen ------------- */
+@media (min-width:992px)and (max-width:1200px){
+    #bar{
+        display: none;
+    }
+    .navigation{
+        height: 66px ;
+       }
+}
+
+
+@media (min-width:1200px){
+    #bar{
+        display: none;
+    }
+    .navigation{
+        height: 66px ;
+       }
+}

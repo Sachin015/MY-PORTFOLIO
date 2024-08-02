@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>work</title>
+    <link rel="stylesheet" href="work.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/faff85eac9.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <li id="bar" ><i class="fa-solid fa-bars"></i></li>
+    <nav class="navigation">
+        <ul>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="./work.html">Work</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="#CONTACT">Contact</a></li>
+        </ul>
+      </nav>
+
+
+    <section class="work">
+        <strong>Featured Work</strong>
+        <div class="workOne">
+          <div class="image">
+            <img
+              src="../images/Mobile.jpg"
+              alt=""
+              style="width: 246px; height: 150px"
+            />
+          </div>
+          <div class="content">
+              <h4>Mobile App</h4>
+          <br />
+          <span class="Date">2021</span> &nbsp; <span class="name">Application Software</span> <br />
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci
+            obcaecati unde quod ad provident odit, repellat explicabo saepe
+            laborum nobis!
+          </p>
+          </div>
+        </div>
+        <div class="workTwo">
+          <div class="image">
+            <img
+              src="../images/portfolio-2.png"
+              alt=""
+              style="width: 246px; height: 150px"
+            />
+          </div>
+          <div class="content">
+              <h4>Portfolio 1</h4>
+          <br />
+          <span class="Date">2022</span> &nbsp; <span class="name">website</span> <br />
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci
+            obcaecati unde quod ad provident odit, repellat explicabo saepe
+            laborum nobis!
+          </p>
+          </div>
+        </div>
+        <div class="workThree">
+          <div class="image">
+            <img
+              src="../images/portfolio-1.png"
+              alt=""
+              style="width: 246px; height: 150px"
+            />
+          </div>
+          <div class="content">
+              <h4>Portfolio 2</h4>
+          <br />
+          <span class="Date">2023</span> &nbsp; <span class="name">website</span> <br />
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci
+            obcaecati unde quod ad provident odit, repellat explicabo saepe
+            laborum nobis!
+          </p>
+          </div>
+        </div>
+        <div class="workFour">
+          <div class="image">
+            <img
+              src="../images/UI.jpg"
+              alt=""
+              style="width: 246px; height: 150px"
+            />
+          </div>
+          <div class="content">
+              <h4>UI/UX</h4>
+          <br />
+          <span class="Date">2024</span> &nbsp; <span class="name">Graphics Design</span> <br />
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci
+            obcaecati unde quod ad provident odit, repellat explicabo saepe
+            laborum nobis!
+          </p>
+          </div>
+        </div>
+      </section>
+      <footer id="CONTACT">
+        <div class="social-links">
+            <a href="https://www.facebook.com/profile.php?id=61550653363830"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://www.instagram.com/sachin_mali2003/"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/in/sachin-mali-a87855266"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://github.com/sachin015/" class="fa-brands fa-github"></i></a>
+        </div>
+        <p> copyright &copy;  2024 All rights reserved</p>
+    </footer>
+
+    <script>
+      var sidebar = document.querySelector(".navigation");
+
+var btn = document.querySelector("#bar i")
+btn.addEventListener("click",function(){
+    if(btn.classList.contains("fa-bars")){
+       btn.classList.remove("fa-bars")
+       btn.classList.add("fa-times")
+       sidebar.style.display = "block"
+    }
+    else if(btn.classList.contains("fa-times")){
+       btn.classList.remove("fa-times")
+       btn.classList.add("fa-bars")
+       sidebar.style.display = "none"
+    }
+})
+    </script>
+</body>
+</html>
