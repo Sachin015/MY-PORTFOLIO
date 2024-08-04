@@ -24,6 +24,7 @@ body{
     padding: 0 5%;
     position: sticky; 
     top: 0;
+    left: 0;
     z-index: 111;
     width: 100%;
     height: 9vh;
@@ -60,9 +61,7 @@ body{
     border-radius: 5px;
     opacity: 100%;
 }
-.navigation ul li a:link{
-    color: rgb(255, 0, 0);
-}
+
 .navigation ul li a{
     width: max-content;
     position: relative;
@@ -107,7 +106,16 @@ body{
     font-size: 44px;
     line-height: 60px;
     margin-bottom: 40px;
+    position: relative;
 }
+
+
+
+
+
+
+
+
 .section-1 button{
     margin-top: 20px;
 font-size: 20px;
@@ -229,18 +237,21 @@ line-height: 29.38px;
     flex-wrap: wrap;
     height: 100%;
 }
-.posts h3{
+.Posters .posts p{
+    font-weight: 400;
+}
+.posts h2{
     text-align: center;
     padding: 20px 0 0 0;
     height: 85px;
-    font-size: 20px;
     font-style: normal;
-    font-weight: 400;
+    font-weight: 600;
     font-family: "Roboto", sans-serif;
 }
 .posts .pad{
     text-align: center;
     margin-bottom: 30px;
+    letter-spacing: 2px;
     font-family: 'Roboto', 'san-serif';
 }
 .posts #col-1{
@@ -284,6 +295,9 @@ flex: 1 1 100px;
 
 .content p{
     flex:1 1 100px;
+}
+.content h4{
+    padding-top: 20px;
 }
 .work strong{
     font-family: "Noto Sans", sans-serif;
@@ -437,7 +451,60 @@ footer p{
     font-size: 2.5rem;
     width :100vw;
     align-items: center;
+    position: relative;
    }
+
+
+.main .section-1 span::before{
+    content: "A Web Developer";
+    color: rgb(255, 61, 61);
+    animation: words 20s infinite ;
+}
+.main .section-1 span::after{
+    content: "";
+    position: absolute;
+    width: calc(100% + 8px);
+    height: 50%;
+    background-color: rgb(255, 255, 255);
+    border-right: 8px solid rgb(249, 124, 145);
+    right: -5px;
+    overflow: hidden;
+    animation: cursor .8s infinite,typing 20s steps(50) infinite ;
+}
+@keyframes words{
+    0%,20%{
+        content: "A Web Developer";
+    }
+    21%,40%{
+        content: "A Blogger";
+    }
+    41%,60%{
+        content: "A Web Designer";
+    }
+    61%,80%{
+        content: "A Frontend Developer";
+    }
+    81%,100%{
+        content: "A React Developer";
+    }
+}
+
+@keyframes typing{
+    10%,15%,30%,35%,50%,55%,70%,75%,90%,95%{
+        width: 0;
+    }
+    5%,20%,25%,40%,45%,60%,65%,80%,85%{
+        width: calc(100% + 8px);
+    }
+}
+
+ 
+@keyframes cursor{
+    to{
+        border-left: 2px solid red;
+    }
+}
+
    .main .section-1 p{
     width :80vw;
     align-items: center;
@@ -495,6 +562,10 @@ footer p{
        }
        .navigation{
         height: 66px ;
+        position: sticky;
+        top: 0;
+        left: 0;
+        z-index: 333;
        }
 
        .main{
@@ -509,7 +580,70 @@ footer p{
        .section-2 img{
         width: 275px;
         height: 275px;
+        position: relative;
+        z-index: 222;
        }
+
+       
+.main .section-1 span::before{
+    content: "A Web Developer";
+    color: rgb(255, 61, 61);
+    animation: words 20s infinite ;
+    position: relative;
+    z-index: 11;
+}
+.main .section-1 span::after{
+    content: "";
+    position: absolute;
+    width: calc(100% + 8px);
+    height: 50%;
+    background-color: white;
+    border-left: 8px solid rgb(249, 124, 145);
+    right: -5px;
+    overflow: hidden;
+    z-index: 11;
+
+    animation: cursor .8s infinite,typing 20s steps(50) infinite ;
+}
+.main .section-1 h2{
+    font-size: 2.25rem;
+    width :100vw;
+    align-items: center;
+    position: relative;
+   }
+@keyframes words{
+    0%,20%{
+        content: "A Web Dev";
+    }
+    21%,40%{
+        content: "A Blogger";
+    }
+    41%,60%{
+        content: "A Web Designer";
+    }
+    61%,80%{
+        content: "A Frontend Dev";
+    }
+    81%,100%{
+        content: "A React Dev";
+    }
+}
+
+@keyframes typing{
+    10%,15%,30%,35%,50%,55%,70%,75%,90%,95%{
+        width: 0;
+    }
+    5%,20%,25%,40%,45%,60%,65%,80%,85%{
+        width: calc(100% + 8px);
+    }
+}
+
+ 
+@keyframes cursor{
+    to{
+        border-left: 2px solid red;
+    }
+}
     
  
 }
@@ -522,6 +656,57 @@ footer p{
     .navigation{
         height: 66px ;
        }
+
+       .main .section-1 span::before{
+        content: "A Web Developer";
+        color: rgb(255, 61, 61);
+        animation: words 20s infinite ;
+    }
+    .main .section-1 span::after{
+        content: "";
+        position: absolute;
+        width: calc(100% + 8px);
+        height: 50%;
+        background-color: rgb(255, 255, 255);
+        border-left: 8px solid rgb(249, 124, 145);
+        right: -5px;
+        overflow: hidden;
+        font-size: 2.5rem;
+        animation: cursor .8s infinite,typing 20s steps(50) infinite ;
+    }
+    @keyframes words{
+        0%,20%{
+            content: "A Web Dev";
+        }
+        21%,40%{
+            content: "A Blogger";
+        }
+        41%,60%{
+            content: "A Web Designer";
+        }
+        61%,80%{
+            content: "A Frontend Dev";
+        }
+        81%,100%{
+            content: "A React Dev";
+        }
+    }
+    
+    @keyframes typing{
+        10%,15%,30%,35%,50%,55%,70%,75%,90%,95%{
+            width: 0;
+        }
+        5%,20%,25%,40%,45%,60%,65%,80%,85%{
+            width: calc(100% + 8px);
+        }
+    }
+    
+     
+    @keyframes cursor{
+        to{
+            border-left: 2px solid red;
+        }
+    }
 }
 
 
@@ -533,6 +718,56 @@ footer p{
     .navigation{
         height: 66px ;
        }
+       .main .section-1 span::before{
+        content: "A Web Developer";
+        color: rgb(255, 61, 61);
+        animation: words 20s infinite ;
+    }
+    .main .section-1 span::after{
+        content: "";
+        position: absolute;
+        width: calc(100% + 8px);
+        height: 50%;
+        background-color: rgb(255, 255, 255);
+        border-left: 8px solid rgb(249, 124, 145);
+        right: -5px;
+        overflow: hidden;
+        font-size: 2.5rem;
+        animation: cursor .8s infinite,typing 20s steps(50) infinite ;
+    }
+    @keyframes words{
+        0%,20%{
+            content: "A Web Developer";
+        }
+        21%,40%{
+            content: "A Blogger";
+        }
+        41%,60%{
+            content: "A Web Designer";
+        }
+        61%,80%{
+            content: "A Frontend Devloper";
+        }
+        81%,100%{
+            content: "A React Developer";
+        }
+    }
+    
+    @keyframes typing{
+        10%,15%,30%,35%,50%,55%,70%,75%,90%,95%{
+            width: 0;
+        }
+        5%,20%,25%,40%,45%,60%,65%,80%,85%{
+            width: calc(100% + 8px);
+        }
+    }
+    
+     
+    @keyframes cursor{
+        to{
+            border-left: 2px solid red;
+        }
+    }
 }
 
 
@@ -543,4 +778,54 @@ footer p{
     .navigation{
         height: 66px ;
        }
+       .main .section-1 span::before{
+        content: "A Web Developer";
+        color: rgb(255, 61, 61);
+        animation: words 20s infinite ;
+    }
+    .main .section-1 span::after{
+        content: "";
+        position: absolute;
+        width: calc(100% + 8px);
+        height: 50%;
+        background-color: rgb(255, 255, 255);
+        border-left: 8px solid rgb(249, 124, 145);
+        right: -5px;
+        font-size: 2.5rem;
+        animation: cursor .8s infinite,typing 20s steps(50) infinite ;
+    }
+    @keyframes words{
+        0%,20%{
+            content: "A Web Developer";
+        }
+        21%,40%{
+            content: "A Blogger";
+        }
+        41%,60%{
+            content: "A Web Designer";
+        }
+        61%,80%{
+            content: "A Frontend Devloper";
+        }
+        81%,100%{
+            content: "A React Developer";
+        }
+    }
+    
+    @keyframes typing{
+        10%,15%,30%,35%,50%,55%,70%,75%,90%,95%{
+            width: 0;
+        }
+        5%,20%,25%,40%,45%,60%,65%,80%,85%{
+            width: calc(100% + 8px);
+        }
+    }
+    
+     
+    @keyframes cursor{
+        to{
+            border-left: 2px solid red;
+        }
+    }
+       
 }

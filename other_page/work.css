@@ -60,9 +60,6 @@ body{
     border-radius: 5px;
     opacity: 100%;
 }
-.navigation ul li a:link{
-    color: rgb(255, 0, 0);
-}
 .navigation ul li a{
     width: max-content;
     position: relative;
